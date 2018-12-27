@@ -71,3 +71,18 @@ print('Accuracy: %.3f' % clf.score(X_test, y_test))
 
 #update model
 clf = clf.partial_fit(X_test, y_test)
+
+
+#Use pickle module to save classifier in its current state, so that we don't need to retrain model when we want to classify new samples
+import pickle
+import os
+dest = os.path.join('movieclassifier', 'pkl_objects')
+if not os.path.exists(dest):
+    os.makedirs(dest)
+
+pickle.dump(stop,
+         open(os.path.join(dest, 'stopwords.pkl'),'wb'),
+         protocol=4)
+pickle.dump(clf,
+         open(os.path.join(dest, 'classifier.pkl'), 'wb'),
+         protocol=4)
