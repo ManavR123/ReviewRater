@@ -1,4 +1,3 @@
-#instead of pickle-ing HashingVectorizer, we can use this file to import the vectorizer when needed
 from sklearn.feature_extraction.text import HashingVectorizer
 import re
 import os
