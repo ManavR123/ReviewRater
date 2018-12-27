@@ -1,9 +1,9 @@
-#Preprocessing the movie dataset into more convenient format - requires PyPrind
 import pyprind
 import pandas as pd
 import os
 import numpy as np
 
+#Preprocessing the movie dataset into more convenient format - requires PyPrind
 # change the `basepath` to the directory of the
 # unzipped movie dataset
 
@@ -28,6 +28,3 @@ df.columns = ['review', 'sentiment']
 np.random.seed(0)
 df = df.reindex(np.random.permutation(df.index))
 df.to_csv('movie_data.csv', index=False, encoding='utf-8')
-
-df = pd.read_csv('movie_data.csv', encoding='utf-8')
-df.head(3)
