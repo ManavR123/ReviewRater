@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Movie Classification</title>
-      <link rel="stylesheet"
-       href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
   </head>
 
 
@@ -15,10 +15,10 @@
 
     <form method=post action="/results">
       <dl>
-        {{ render_field(form.moviereview, cols='30', rows='10') }}
+        {{ render_field(form.moviereview, cols='20', rows='5') }}
       </dl>
       <div>
-        <input type=submit value='Submit review'
+        <input class="button" type=submit value='Submit review'
         name='submit_btn'>
       </div>
     </form>

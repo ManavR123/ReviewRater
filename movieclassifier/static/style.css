@@ -1,7 +1,67 @@
-body{
-  width:600px;
+html {
+	min-height: 100%;
 }
 
-.button{
-  padding-top: 20px;
+body {
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Segoe UI";
+	color: #FFFFFF;
+	background: -webkit-linear-gradient(top, #193965 0%, #347292 47%, #6aacb9 87%, #bbd1ce 200%);
+	background: -o-linear-gradient(top, #193965 0%, #347292 47%, #6aacb9 87%, #bbd1ce 200%);
+}
+
+.results  {
+	height: auto;
+}
+
+input {
+	white-space: nowrap;
+}
+
+table {
+	position: relative;
+	color: white;
+}
+
+h1, h2, h3, h4, div, ul {
+	text-align: center;
+}
+
+dl {
+	margin-left: -3%;
+}
+
+form {
+	text-align: center;
+}
+
+.button {
+	cursor: pointer;
+	position: relative;
+    background: #369;
+    font-weight: normal;
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-family: "Segoe UI";
+    padding: 15px 30px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+.button:hover {
+	color: #fff;
+	border-color: #1c82a5;
+	background: #1c82a5;
+}
+
+.form {
+    background: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #369;
+    width: 50%;
+    font-family: "Segoe UI";
 }
